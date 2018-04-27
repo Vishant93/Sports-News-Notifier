@@ -29,6 +29,7 @@ public class SecondActivity extends AppCompatActivity {
     static final String KEY_URLTOIMAGE = "urlToImage";
     static final String KEY_PUBLISHEDAT = "publishedAt";
     //API_Key holds the value of the api key we get permission for from espn
+
     String API_KEY = "858497b10ac34da49def48ae5c4b8a77";
     String NEWS_SOURCE = "ESPN";
     ListView listNews;

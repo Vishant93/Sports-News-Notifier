@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity" />
-        <activity android:name=".Reader"></activity>
+        <activity android:name=".DetailsActivity" />
     </application>
 
 </manifest>

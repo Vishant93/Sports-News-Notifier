@@ -43,7 +43,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         Button nextButton = findViewById(R.id.button);
         nextButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                Intent intent = (new Intent(MainActivity.this, SecondActivity.class));
+                startActivity(intent);
             }
         });
     }
@@ -84,5 +85,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
             sportSpinner.setAdapter(adapter2);
             sportSpinner.setEnabled(true);
         }
+    }
+
+    public String getSpinnerText() {
+        String text = sportSpinner.getSelectedItem().toString();
+        return text;
     }
 }
